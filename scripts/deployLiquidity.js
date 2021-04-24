@@ -44,7 +44,7 @@ async function addLiqudityForPairBNB(routerContract, deployer, pairInfo) {
   console.log('Factory address:', routerContract.factory())
   console.log("Approved", pairInfo.symbol, approve)
   console.log('Adding liquidity for BNB pair:', pairInfo.symbol);
-  await routerContract.addLiquidityBNB(bepContract.address, '100000000000000','100000000000000', '100000000000000', deployer, moment(moment.now()).add(1200, 'seconds').unix(), {value: BigNumber.from('100000000000000')}).then((res) => {
+  await routerContract.addLiquidityBNB(bepContract.address, '100000000000000000','100000000000000000', '100000000000000000', deployer, moment(moment.now()).add(1200, 'seconds').unix(), {value: BigNumber.from('100000000000000000')}).then((res) => {
     console.log('Adding liquidity response:', res);
   }, (error) => console.error(error))
 }

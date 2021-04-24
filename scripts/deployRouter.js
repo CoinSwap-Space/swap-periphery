@@ -34,12 +34,6 @@ async function main(deployData) {
   console.log('fac', factoryAdd)
   console.log('wbnb', wbnb)
 
-  await router.setFeeTo(routerConfig.feeTo)
-  await new Promise(resolve => setTimeout(resolve, 5000))
-
-  const feeTo = await router.feeTo();
-  console.log('Fee to set to address', feeTo)
-
   return deployData;
 }
 
