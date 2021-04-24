@@ -11,8 +11,8 @@ import './interfaces/IWBNB.sol';
 contract CoinSwapRouter is ICoinSwapRouter02 {
     using SafeMath for uint;
 
-    address public immutable override factory;
-    address public immutable override WBNB;
+    address public override factory;
+    address public override WBNB;
 
     modifier ensure(uint deadline) {
         require(deadline >= block.timestamp, 'CoinSwapRouter: EXPIRED');

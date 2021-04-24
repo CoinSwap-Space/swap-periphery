@@ -20,7 +20,7 @@ library CoinSwapLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66' // init code hash
+                hex'2e3f108b8526ff1faa4d526bb84210fc5a2bfc5aad2f62207d7964554a5d029d' // init code hash
             ))));
     }
 
